@@ -8,6 +8,31 @@
     <title>Lesson1</title>
 </head>
 <body>
-<?echo 'basked';?>
+<?
+// константа
+define('bas','basked');
+const BASK = 'BASKED';
+
+// можно создавать и на кирилице
+$ваапвар=121212;
+ echo 'Вывод переменной $ваапвар= '.$ваапвар . '<br>';
+
+// Переменные чувствительны к регистру
+$Bas='Bas';
+$bas='bas';
+$BAS='BAS';
+echo '$Bas='.$Bas.', $bas='.$bas.', $BAS='.$BAS. '<br>';
+
+echo "Константа define('bas','basked'); =" .bas. '<br>';
+echo "Константа const BASK = 'BASKED'; =" .BASK. '<br>';
+
+
+echo 'ПЕРЕМЕННЫЕ ПЕРЕМЕННЫХ <br>';
+$bas="ket";
+$ket="bas";
+echo $ket;
+echo $$ket;//basket
+
+?>
 </body>
 </html>
