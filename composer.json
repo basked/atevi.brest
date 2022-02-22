@@ -1,0 +1,15 @@
+{
+    "name": "vendor/atevi",
+    "description": "Lessons for Atevi",
+    "type": "project",
+    "require-dev": {
+        "symfony/var-dumper": "^5.4"
+    },
+    "authors": [
+        {
+            "name": "basked",
+            "email": "basked@bas.com"
+        }
+    ],
+    "require": {}
+}
