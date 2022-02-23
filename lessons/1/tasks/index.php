@@ -51,3 +51,13 @@ $a = 3;
 $b = 4;
 echo "\$a = $a; \$b = $b; \$c = $c; \$d = $d;";
     ');
+
+Helper::taskDescription(2, 5, 'Константы');
+Helper::taskAnswer("
+define('MV',41);
+const MV1=33;
+
+echo 'Сумма констант MV+MV1='.(MV+MV1);
+//MV=42;
+//MV1=34;
+");
