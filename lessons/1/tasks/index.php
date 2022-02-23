@@ -17,5 +17,37 @@ Helper::taskAnswer(
 */<br>
  echo 'Hello, world!';
 ");
+Helper::taskDescription(2, 2, 'Именование переменных');
+Helper::taskAnswer(
+    '$channelName;
+$manufacturerAddress;
+$carColor;
+$waterTemperature;
+$phoneModel;');
+Helper::taskDescription(2, 3, 'Операторы');
+Helper::taskAnswer('
+$a = 3;
+$b = 5;
+$c = 8;
+echo "\$a = $a; \$b = $b; \$c = $c; ";
 
+$sum=$a+$b+$c;
+echo "\$a+\$b+\$c = $sum";
 
+$result = 2+6+2/5-1;
+echo "2+6+2/5-1 = $result";
+');
+Helper::taskDescription(2, 4, ' Копирование значений переменных и копирование переменных по ссылке');
+Helper::taskAnswer('
+$a = 1;
+$b = 2;
+echo "\$a = $a; \$b = $b;";
+
+$c = $a;
+$d = &$b;
+echo "\$a = $a; \$b = $b;";
+
+$a = 3;
+$b = 4;
+echo "\$a = $a; \$b = $b; \$c = $c; \$d = $d;";
+    ');
