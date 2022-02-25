@@ -1,29 +1,38 @@
-<?php
-declare(strict_types=1);
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson1</title>
+</head>
+<body>
+<?
+// константа
+define('bas','basked');
+const BASK = 'BASKED';
 
- require_once '../../vendor/autoload.php';
-class Person
-{
-    public $name;
-    public $age;
+// можно создавать и на кирилице
+$ваапвар=121212;
+ echo 'Вывод переменной $ваапвар= '.$ваапвар . '<br>';
 
-    public function __construct($name, $age)
-    {
-        $this->name = $name;
-        $this->age = $age;
-    }
+// Переменные чувствительны к регистру
+$Bas='Bas';
+$bas='bas';
+$BAS='BAS';
+echo '$Bas='.$Bas.', $bas='.$bas.', $BAS='.$BAS. '<br>';
 
-    public function getInfo(string $i = 'Info'):string
-    {
-        return $i . ': ' . $this->name . ' ' . $this->age;
-    }
-}
+echo "Константа define('bas','basked'); =" .bas. '<br>';
+echo "Константа const BASK = 'BASKED'; =" .BASK. '<br>';
 
-$p = new Person('basked', 35);
-$info = $p->getInfo(51521);
-echo $info;
 
-$bas= ['bas', 'ket'];
-$ket = [1,2,3,...$bas];
-dd($ket);
-return;
+echo 'ПЕРЕМЕННЫЕ ПЕРЕМЕННЫХ <br>';
+$bas="ket";
+$ket="bas";
+echo $ket;
+echo $$ket;//basket
+
+?>
+</body>
+</html>
