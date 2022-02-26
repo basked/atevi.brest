@@ -16,6 +16,7 @@
 // квадратичное выражение
 function quadratic($a = 0, $b = 0, $c = 0)
 {
+
     // формула дискриминанта D = b^3 − 4ac
     $d = pow($a, 2) - 4 * $b * $c;
     // если D < 0 , находим x1 и x2
@@ -31,13 +32,13 @@ function quadratic($a = 0, $b = 0, $c = 0)
     }
     // если D < 0 , выводим Нет корней
     else {
-        return false;
-    };
+        return "false";
+    }
 }
 
 // вывод функции
-echo '<pre>';
-print_r(quadratic(120, 26, 120));
-echo '</pre>';
+//echo '<pre>';
+//print_r(quadratic(120, 26, 120));
+//echo '</pre>';
 
 
